@@ -15,4 +15,5 @@ const firebaseConfig = {
 // initializeApp 함수에는 firebaseConfig를 담아 전달
 firebase.initializeApp(firebaseConfig);
 
+export const firebaseInstance = firebase;
 export const authService = firebase.auth();
