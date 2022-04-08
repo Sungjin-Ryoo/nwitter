@@ -1,6 +1,10 @@
 // "firebase/app"에 포함된 모든 모듈을 firebase라는 객체에 부여한다는 뜻
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
+import "firebase/firestore";
+
+// import { initializeApp } from "firebase/app";
+// import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -15,5 +19,9 @@ const firebaseConfig = {
 // initializeApp 함수에는 firebaseConfig를 담아 전달
 firebase.initializeApp(firebaseConfig);
 
+// const app = initializeApp(firebaseConfig);
+// export const authService = getAuth();
+
 export const firebaseInstance = firebase;
 export const authService = firebase.auth();
+export const dbService = firebase.firestore();
