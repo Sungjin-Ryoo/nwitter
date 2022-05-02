@@ -1,7 +1,7 @@
 // "firebase/app"에 포함된 모든 모듈을 firebase라는 객체에 부여한다는 뜻
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import "firebase/firestore";
+import "firebase/compat/firestore";
 
 // import { initializeApp } from "firebase/app";
 // import { getAuth } from "firebase/auth";
