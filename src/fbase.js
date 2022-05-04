@@ -2,6 +2,8 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+// 사진 저장 기능 추가를 위한 import
+import "firebase/compat/storage";
 
 // import { initializeApp } from "firebase/app";
 // import { getAuth } from "firebase/auth";
@@ -25,3 +27,4 @@ firebase.initializeApp(firebaseConfig);
 export const firebaseInstance = firebase;
 export const authService = firebase.auth();
 export const dbService = firebase.firestore();
+export const storageService = firebase.storage();
